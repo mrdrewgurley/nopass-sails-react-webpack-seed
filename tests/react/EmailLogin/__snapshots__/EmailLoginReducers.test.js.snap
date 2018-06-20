@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Email Login Component Reducers Email Login Button Reducer should handle attemptHandshake action 1`] = `
+Object {
+  "class": "disabled",
+  "label": "VERIFICATION PENDING",
+  "state": false,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Button Reducer should handle handshakeFailure action 1`] = `
+Object {
+  "class": "uk-form-danger",
+  "label": "SEND LOGIN EMAIL",
+  "state": true,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Button Reducer should handle handshakeSuccess action 1`] = `
+Object {
+  "class": "uk-form-success",
+  "label": "VERIFICATION SUCCESS",
+  "state": false,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Button Reducer should return the initial state 1`] = `
+Object {
+  "class": "enabled",
+  "label": "SEND LOGIN EMAIL",
+  "state": true,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Input Reducer should handle attemptHandshake action 1`] = `
+Object {
+  "class": "disabled",
+  "state": false,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Input Reducer should handle handshakeFailure action 1`] = `
+Object {
+  "class": "uk-form-danger",
+  "state": true,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Input Reducer should handle handshakeSuccess action 1`] = `
+Object {
+  "class": "uk-form-success",
+  "state": false,
+}
+`;
+
+exports[`Email Login Component Reducers Email Login Input Reducer should return the initial state 1`] = `
+Object {
+  "class": "enabled",
+  "state": true,
+}
+`;

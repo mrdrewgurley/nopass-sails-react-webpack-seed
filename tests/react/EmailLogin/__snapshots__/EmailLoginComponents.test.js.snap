@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Email Login Components Email Login Button Component renders with proper defaults 1`] = `
+<div
+  className="uk-button-group"
+>
+  <button
+    className="uk-button"
+    disabled={true}
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Email Login Components Email Login Button Component renders with proper defaults 2`] = `
+<div
+  className="uk-inline"
+  id="EmailLoginInput"
+>
+  <span
+    className="uk-form-icon"
+    uk-icon="icon: user"
+  />
+  <input
+    className="uk-input"
+    disabled={true}
+    id="form-input-email"
+    required={true}
+  />
+  <label
+    htmlFor="form-input-email"
+  >
+    Email Address
+  </label>
+</div>
+`;

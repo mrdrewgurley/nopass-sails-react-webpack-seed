@@ -1,0 +1,40 @@
+################################################
+#   ╔═╗╔╦╗╦╔╦╗╔═╗╦═╗┌─┐┌─┐┌┐┌┌─┐┬┌─┐
+#   ║╣  ║║║ ║ ║ ║╠╦╝│  │ ││││├┤ ││ ┬
+#  o╚═╝═╩╝╩ ╩ ╚═╝╩╚═└─┘└─┘┘└┘└  ┴└─┘
+#
+# > Formatting conventions for your Sails app.
+#
+# This file (`.editorconfig`) exists to help
+# maintain consistent formatting throughout the
+# files in your Sails app.
+#
+# For the sake of convention, the Sails team's
+# preferred settings are included here out of the
+# box.  You can also change this file to fit your
+# team's preferences (for example, if all of the
+# developers on your team have a strong preference
+# for tabs over spaces),
+#
+# To review what each of these options mean, see:
+# http://editorconfig.org/
+#
+################################################
+root = true
+
+[*]
+charset = utf-8
+continuation_indent_size = 4
+
+end_of_line = lf
+
+indent_brace_style = K&R
+indent_size = 2
+indent_style = space
+
+insert_final_newline = true
+
+spaces_around_operators = true
+spaces_around_brackets = inside
+
+trim_trailing_whitespace = true

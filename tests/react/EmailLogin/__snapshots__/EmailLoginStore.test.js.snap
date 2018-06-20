@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailLoginStore.state should match the initial snapshot 1`] = `
+Object {
+  "EmailLoginButtonReducer": Object {
+    "class": "enabled",
+    "label": "SEND LOGIN EMAIL",
+    "state": true,
+  },
+  "EmailLoginInputReducer": Object {
+    "class": "enabled",
+    "label": "SEND LOGIN EMAIL",
+    "state": true,
+  },
+}
+`;

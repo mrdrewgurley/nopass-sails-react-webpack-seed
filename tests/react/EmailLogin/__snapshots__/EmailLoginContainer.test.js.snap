@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Email Login Container renders with proper defaults 1`] = `
+<div>
+  <div
+    className="uk-inline"
+    id="EmailLoginInput"
+  >
+    <span
+      className="uk-form-icon"
+      uk-icon="icon: user"
+    />
+    <input
+      className="uk-input enabled"
+      disabled={false}
+      id="form-input-email"
+      required={true}
+    />
+    <label
+      htmlFor="form-input-email"
+    >
+      Email Address
+    </label>
+  </div>
+  <br />
+  <br />
+  <div
+    className="uk-button-group"
+  >
+    <button
+      className="uk-button enabled"
+      disabled={false}
+      onClick={[Function]}
+    >
+      SEND LOGIN EMAIL
+    </button>
+  </div>
+</div>
+`;
