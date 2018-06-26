@@ -25,6 +25,8 @@ module.exports.webpack = {
   ***************************************************************************/
   entry: {
     'app': './assets/js/app.js',
+    'homepage': './assets/js/homepage.js',
+    'login': './assets/js/login.js',
     'EmailLoginComponent': './assets/app/EmailLoginComponent/EmailLoginComponent.js'
   },
 

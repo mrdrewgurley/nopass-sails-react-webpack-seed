@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>Zero Auth Sails App w/ React</title>
+    <title>
+      <%= sails.config.custom.organizationName %>
+    </title>
     <link rel="stylesheet" href="/styles/app.bundle.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,12 +14,17 @@
   <body>
     <div class="default-page">
       <div class="header">
-        <h1 id="main-title" class="container"><%= __('Zero Auth Sails App w/ React') %></h1>
-        <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
+        <h1 id="main-title" class="container">
+          <%= __('NoPass Sails App w/ React and Webpack') %>
+        </h1>
+        <h3 class="container">You're looking at:
+          <code><%= view.pathFromApp + '.' +view.ext %></code>
+        </h3>
       </div>
       <%- body %>
     </div>
 
     <script type="text/javascript" src="/js/app.bundle.js"></script>
   </body>
+
 </html>

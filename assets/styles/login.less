@@ -1,0 +1,84 @@
+/* Import reset styles */
+@import '_base.less';
+
+/* Add auth.login view styles */
+fieldset {
+  border: none;
+  background: #f5f5f5 !important;
+
+  .uk-inline {
+    width: 300px;
+
+    input {
+      display: block;
+      padding: .5rem;
+      width: 100%;
+    }
+
+    label {
+      cursor: text;
+      color: #777777;
+      left: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.15s ease-in-out;
+      user-select: none;
+    }
+
+    input:disabled + label,
+    input:valid + label,
+    input:focus + label {
+      font-size: .75rem;
+      left: 0px;
+      top: -10px;
+    }
+  }
+
+  button {
+    background: #118798 !important;
+    color: #ffffff !important;
+  }
+}
+
+.uk-notification-message-danger {
+  background: #d11a0a;
+  border: 1px solid #ed3918;
+  border-radius: 3px;
+  box-shadow: 0px 15px 10px -15px #111;
+  color: #ffffff;
+  font-size: 1rem;
+  position: relative;
+
+  a {
+    display: none !important;
+  }
+
+  .text {
+    left: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.uk-notification-message-success {
+  background: #7e901a;
+  border: 1px solid #b6c729;
+  border-radius: 3px;
+  box-shadow: 0px 15px 10px -15px #111;
+  color: #ffffff;
+  font-size: 1rem;
+  position: relative;
+
+  a {
+    display: none !important;
+  }
+
+  .text {
+    left: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

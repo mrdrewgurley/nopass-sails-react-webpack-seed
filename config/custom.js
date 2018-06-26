@@ -19,7 +19,7 @@ module.exports.custom = {
 
   /**************************************************************************
   *                                                                         *
-  * The name of the Organization to use during development.                 *
+  * The secret used to hash your authentication tokens.  CHANGE THIS!!      *
   *                                                                         *
   **************************************************************************/
   jwtSecret: process.env.jwtSecret || "trMGy3Zg4khujkqxBUNqhBJDKEZFvJnuJV3egQD3Wt4EMYRuaxrm3AprExnaVb77",
@@ -43,8 +43,8 @@ module.exports.custom = {
   * The TTL (time-to-live) for various sorts of tokens before they expire.  *
   *                                                                         *
   **************************************************************************/
-  authTokenTTL:       1*60*60*1000,// 1 hour
-  sessionTokenTTL:    24*60*60*1000,// 24 hours
+  authTokenTTL: 1 * 60 * 60 * 1000,// 1 hour
+  sessionTokenTTL: 24 * 60 * 60 * 1000,// 24 hours
 
   /**************************************************************************
   *                                                                         *
@@ -52,7 +52,7 @@ module.exports.custom = {
   * if "Remember Me" was checked while logging in.                          *
   *                                                                         *
   **************************************************************************/
-  rememberMeCookieMaxAge: 30*24*60*60*1000, // 30 days
+  rememberMeCookieMaxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
 
   /**************************************************************************
   *                                                                         *

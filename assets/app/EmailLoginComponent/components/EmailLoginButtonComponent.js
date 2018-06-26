@@ -3,16 +3,23 @@ import classNames from 'classnames'
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * EmailLoginButtonComponent
+ * @desc React component for the Email Login Button
+ */
 export default class EmailLoginButtonComponent extends PureComponent {
-
+  /**
+   * requestAccess
+   * @desc sends an ajax request to the auth controller
+   */
   requestAccess = () => {
     var that = this
     axios
-      .put('/auth/handshake', {
+      .put('/auth/request', {
         email: document.getElementById('form-input-email').value
       })
       .then(res => {
-        if (res.status == 204) {
+        if (res.status == 200) {
           that.props.Actions.handshakeSuccess()
           window.uikit.notification({
             message: "<span uk-icon='icon: info'></span><span class='text'>Success, please check your email inbox</span>",
@@ -21,7 +28,7 @@ export default class EmailLoginButtonComponent extends PureComponent {
           document.getElementById('EmailLoginInput').remove();
         }
       })
-      .catch(function(err) {
+      .catch(function (err) {
         if (err.response.status == 400) {
           that.props.Actions.handshakeFailure()
           err.response.data.forEach(message => {
@@ -34,13 +41,21 @@ export default class EmailLoginButtonComponent extends PureComponent {
       })
   }
 
+  /**
+   * handleClick
+   * @desc Actions to be undertaken when the login button is clicked
+   */
   handleClick = (e) => {
     e.preventDefault()
     this.props.Actions.attemptHandshake()
     this.requestAccess()
   }
 
-  render() {
+  /**
+   * render
+   * @desc renders the default login button code
+   */
+  render () {
     return (
       <div className="uk-button-group">
         <button
@@ -53,12 +68,12 @@ export default class EmailLoginButtonComponent extends PureComponent {
       </div>
     )
   }
-
 }
 
+/**
+ * PropTypes Definitions
+ */
 EmailLoginButtonComponent.propTypes = {
-
   Actions: PropTypes.object.isRequired,
   EmailLoginButtonReducer: PropTypes.object.isRequired
-
 }

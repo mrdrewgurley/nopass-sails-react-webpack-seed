@@ -2,8 +2,9 @@ import { createStore } from 'redux'
 import reducers from '../reducers/EmailLoginReducers'
 
 /**
- * @desc returns the data store
- * @param {object} intialState - override intial state of the store
+ * Email Login Store
+ * @desc returns the components data store
+ * @param {object} intialState - defines the intial state of the store
  * @return {object}
  */
 export default initialState =>

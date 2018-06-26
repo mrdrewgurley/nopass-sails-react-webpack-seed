@@ -92,7 +92,7 @@ yarn install
 
 ### Running
 
-* Watches the project with continuous rebuild.
+* Watches the project with continuous rebuild.  View at http://localhost:1337
 ```
 yarn start
 ```
@@ -140,6 +140,7 @@ You&rsquo;ll want to pay attention to the following files when tweaking this app
 * During development or testing, any emails sent using the `api/helpers/send-templated-email.js` methods, can instead be logged to the console by omitting a recipient.
 * Production emails are designed to utilize Mailgun ( as is the preferred standard of the Sails Team ).  This can be overriden by refactoring the code in `api/helpers/send-templated-email.js`.
 * Take a look at the `config/custom.js` for custom application level settings.
+  > BE SURE TO CHANGE THE `jwtSecret` setting in `config/custom.js`.
 
 ## What happens when you lift
 
